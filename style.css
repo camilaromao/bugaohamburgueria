@@ -301,17 +301,15 @@ footer {
 
      .queridinhos {
         font-size: 15px;
-        height: 50px;
      }
-
-
-    .img-1 , .img-2 , .img-3 {
-         width: 40vw;
-         max-width: 350px;
-    }
 
     .container-queridinhos {
         flex-direction: column;
+    }
+
+     .img-1 , .img-2 , .img-3 {
+         width: 40vw;
+         max-width: 350px;
     }
 
     .texto-alegria , .texto-felicidade ,
