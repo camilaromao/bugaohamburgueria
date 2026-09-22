@@ -69,21 +69,16 @@ a {
     font-size: 15px;
 }
 
-.video-banner {
-    width: 550px;
-}
 
 .queridinhos {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: blueviolet;
     padding: 30px;
 }
 
 .texto-queridinhos {
-    background-color: rgb(233, 194, 233);
     border-radius: 25px;
     width: 300px;
     height: 60px;
@@ -304,11 +299,11 @@ footer {
         justify-content: center;
     }
 
-     .texto-queridinhos {
+     .queridinhos {
         font-size: 15px;
-        width: 200px;
         height: 50px;
      }
+
 
     .img-1 , .img-2 , .img-3 {
          width: 40vw;
@@ -337,8 +332,8 @@ footer {
     } 
 
     .botao-peça-aqui {
-        font-size: 2vw;
-        width: 140px;
+        font-size: 12px;
+        width: 160px;
         height: 50px;
     }
 
