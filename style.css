@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  background: rgb(142, 65, 201);
+}
+
+.logo {
+width: 80px;
+}
+
+.nome-site {
+    padding: 20px;
+    color: rgb(255, 254, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.acoes-header {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.img-contato , .img-pedido {
+    width: 50px;
+    margin: 10px;
+}
+
+.contato {
+    color: rgb(43, 226, 198);
+    font-size: 20px;
+}
+
+.contato:hover {
+    color: violet;
+}
+
+.pedido-barra {
+    color: aqua;
+     font-size: 20px;
+}
+
+.pedido-barra:hover {
+    color: violet;
+}
+
+.texto-banner {
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+
+    color: rgb(98, 27, 165);
+    font-size: 15px;
+}
+
+.queridinhos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: blueviolet;
+    padding: 30px;
+}
+
+.texto-queridinhos {
+    background-color: rgb(233, 194, 233);
+    border-radius: 25px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.img-queridinhos {
+    width: 50px;
+}
+
+.container-queridinhos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: rgb(139, 15, 139);
+}
+
+.lanches-queridinhos {
+    font-size: 12px;
+}
+
+.img-1 , .img-2, .img-3 {
+    width: 350px;
+}
+
+.texto-alegria , .texto-felicidade , .texto-xsalada  {
+    padding: 12px;
+}
+
+
+/* =========== AREA DO CARDAPIO ======= */
+
+.container-cardapio {
+    display: flex;
+    text-align: center;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.texto-cardapio {
+    font-size: 25px;
+}
+
+.icone-cardapio {
+    width: 50px;
+}
+
+.lista-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.produto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-lanche {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.produto:hover .imagem-lanche {
+    transform: scale(1.1);
+}
+
+.info-lanche {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.produto:hover .info-lanche {
+    transform: translateY(0);
+}
+
+.info-lanche .titulo-lanche {
+    margin: 0 0 8px;
+}
+
+.info-lanche .texto-p {
+    margin: 0;
+}
+
+.lista-produtos-2,
+.lista-produtos-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagem-bebida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.info-bebida {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    color: white;
+
+    background: linear-gradient(
+        transparent,
+        rgba(0, 0, 0, 0.8)
+    );
+
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.produto:hover .imagem-bebida {
+    transform: scale(1.1);
+}
+
+.produto:hover .info-bebida {
+    transform: translateY(0);
+}
+
+.info-bebida .titulo-bebida {
+    margin: 0 0 8px;
+}
+
+.info-bebida .texto-p {
+    margin: 0;
+}
+
+.pedido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+}
+
+.botao-peça-aqui {
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 104, 77);
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.botao-peça-aqui:hover {
+    background-color: rgb(196, 47, 255);
+}
+
+
+footer {
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 20px;
+}
+
+/* ========= MOBILE ========== */
+
+@media screen and (max-width: 768px) {
+
+    .cabecalho {
+       flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 15vw;
+        max-width: 80px;
+    }
+
+    .acoes-header {
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-1 , .img-2 , .img-3 {
+         width: 40vw;
+         max-width: 350px;
+    }
+
+    .container-queridinhos {
+        flex-direction: column;
+    }
+
+    .texto-alegria , .texto-felicidade ,
+     .texto-xsalada {
+      font-size: 16px;
+    }
+
+    .lista-produtos , .lista-produtos-2 ,
+    .lista-produtos-3 {
+        display: block;
+
+    }
+
+    .produto {
+        width: 90vw;
+        height: 60vw;
+       margin: 3vw auto;
+    } 
+
+}
+
