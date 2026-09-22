@@ -146,6 +146,9 @@ a {
     border-radius: 30px;
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    width: 350px;
+    height: 350px;
 }
 
 .imagem-lanche {
