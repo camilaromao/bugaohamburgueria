@@ -301,6 +301,12 @@ footer {
 
      .queridinhos {
         font-size: 15px;
+        display: flex;
+     }
+
+     .img-queridinhos {
+       width: 50px;
+       margin: 0;
      }
 
     .container-queridinhos {
