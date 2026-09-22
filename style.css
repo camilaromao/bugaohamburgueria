@@ -300,13 +300,12 @@ footer {
     }
 
      .queridinhos {
-        font-size: 15px;
-        display: flex;
+        font-size: 12px;
+        flex-direction: column;
      }
 
      .img-queridinhos {
        width: 50px;
-       margin: 0;
      }
 
     .container-queridinhos {
